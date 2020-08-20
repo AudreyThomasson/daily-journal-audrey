@@ -1,0 +1,12 @@
+body {
+    font-family: 'Oxygen', sans-serif;
+}
+
+.logo {
+    font-family: 'Delius Swash Caps', cursive;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+}
