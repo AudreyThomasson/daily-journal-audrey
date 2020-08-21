@@ -8,55 +8,63 @@
     <title>Daily Journal</title>
 </head>
 <body>
-    <header>
-        <h1 class="logo">Daily Journal</h1>
-        <h5>by Audrey Thomasson</h5>
+    <main>
+        <header>
+            <h1 class="logo">Daily Journal</h1>
+            <!-- <h5>by Audrey Thomasson</h5> -->
+        </header>
+        <hr>
 
-    </header>
-    <hr>
-
-    <form action="">
-        <fieldset>
-            <label for="journalDate">Date of entry:</label>
-            <input type="date" name="journalDate" id="journalDate">
-        </fieldset>
-            <br>
-        <fieldset>
-            <label for="concepts">Concepts covered:</label>
-            <input type="text" id="concepts" name="concepts">
-        </fieldset>
-            <br>
-        <fieldset>
-            <label for="entry">Journal entry:</label>
-            <textarea name="entry" rows="2" cols="20"></textarea>
-        </fieldset>
-            <br>
-        <fieldset>
-            <label for="moods">Mood for the day:</label>
-            <select id="moods" name="moods">
-            <option value="happy">Happy</option>
-            <option value="accomplished">Accomplished</option>
-            <option value="ok">OK</option>
-            <option value="frustrated">Frustrated</option>
-            <option value="lost">Lost</option>
-            </select>
-        </fieldset>
+        
+        
+        <form action="">
+            <fieldset>
+                <label for="journalDate">Date of entry:</label>
+                <input type="date" name="journalDate" id="journalDate">
+            </fieldset>
+                <br>
+            <fieldset>
+                <label for="concepts">Concepts covered:</label>
+                <input type="text" id="concepts" name="concepts">
+            </fieldset>
+                <br>
+            <fieldset>
+                <label for="entry">Journal entry:</label>
+                <textarea name="entry" rows="2" cols="20"></textarea>
+            </fieldset>
+                <br>
+            <fieldset>
+                <label for="moods">Mood for the day:</label>
+                <select id="moods" name="moods">
+                <option value="happy">Happy</option>
+                <option value="accomplished">Accomplished</option>
+                <option value="ok">OK</option>
+                <option value="frustrated">Frustrated</option>
+                <option value="lost">Lost</option>
+                </select>
+            </fieldset>
             <br>
             <input type="submit" value="Record Journal Entry">
-
-<!-- Work on adding flexbox functionality -->
-        
-    </form>
-
-    <main>
+        </form>
 
 
+        <div class="entriesHolder">
+            <div class= "entryList">
+                <!-- journal entries will auto fill in here -->
+            </div>
+        </div>
 
 
 
 
-        <footer>&copy; 2020 Daily Journal</footer>
+
+
+
+
+
+        <footer>&copy; 2020 Audrey Thomasson</footer>
     </main>
-    <script type="module" src="./scripts/main.js>
+    <script type="module" src="scripts/main.js">
+
 </body>
 </html>
