@@ -15,7 +15,6 @@ export const EntryListComponent = () => {
     const entries = useJournalEntries()
 
     for (const entry of entries) {
-        // entryHTMLRepresentation += JournalEntryComponent(entry);
         /*
             Invoke the component that returns an
             HTML representation of a single entry
@@ -23,4 +22,4 @@ export const EntryListComponent = () => {
         entryLog.innerHTML += 
         `${JournalEntryComponent(entry)}`
     }
-};
+}

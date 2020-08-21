@@ -13,7 +13,7 @@ const journal = [
         date: "07/24/2025",
         concept: "HTML & CSS",
         entry: "We talked about HTML components and how to make grid layouts with Flexbox in CSS.",
-        mood: "Ok"
+        moods: "Ok"
     },
 
     {
@@ -21,7 +21,7 @@ const journal = [
         date: "07/25/2025",
         concept: "GitHub",
         entry: "We talked about HTML components and how to make grid layouts with Flexbox in CSS.",
-        mood: "Ok"
+        moods: "Ok"
     },
 
     {
@@ -29,7 +29,7 @@ const journal = [
         date: "07/26/2025",
         concept: "Functions",
         entry: "We talked about HTML components and how to make grid layouts with Flexbox in CSS.",
-        mood: "Ok"
+        moods: "Ok"
     }
 ]
 

@@ -4,14 +4,14 @@
  */
 export const JournalEntryComponent = (entry) => {
     return `
-    <div class="entry-card">
+    <section class="entry-card">
         <div id="entry--${entry.id}" class="journalEntry">
-        <div> date: ${entry.date}</div>
-        <div>concept: ${entry.concept}</div>
-        <div>mood:  ${entry.mood}</div> 
+        <div> Date: ${entry.date}</div>
+        <div>Concept: ${entry.concept}</div>
+        <div>Mood:  ${entry.moods}</div> 
+        <div>Entry: ${entry.entry}</div>
         <br>
-        <div>entry: ${entry.entry}</div>
-    </div>
+    </section>
 
     `
 }
