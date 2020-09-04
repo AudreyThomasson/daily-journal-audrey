@@ -12,10 +12,10 @@ const dispatchStateChangeEvent = () => {
 
     eventHub.dispatchEvent(entryStateChangedEvent)
 
+}
 
 
-
-const journal = []
+let journal = []
 
 
 export const getEntries = () => {
@@ -28,10 +28,10 @@ export const getEntries = () => {
 }
 
 
-export const useJournalEntries = () => {
+export const useEntries = () => {
     const sortedByDate = journal.sort(
         (currentEntry, nextEntry) =>
-            Date.parse(currentEntry.date) - Date.parse(nextEntry.date)
+            Date.parse(nextEntry.date) - Date.parse(currentEntry.date)
     )
     return sortedByDate
 }

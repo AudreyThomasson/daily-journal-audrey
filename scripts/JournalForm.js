@@ -1,22 +1,24 @@
 import { saveEntry } from './JournalDataProvider.js'
 
 const eventHub = document.querySelector(".container")
+const contentTarget = document.querySelector(".entryForm")
 
 // code below listens for new note entry then tells saveEntry 
 // to go save the new entry to the database
 eventHub.addEventListener("click", clickEvent => {
     if (clickEvent.target.id === "saveEntry") {
-        const entryContent = document.querySelector("#noteForm--text")
-        const noteMood = document.querySelector("#moods")
+        const entryContent = document.querySelector("#entry")
         const journalDate = document.querySelector('#journalDate')
         const concepts = document.querySelector('#concepts')
+        const todaysMood = document.querySelector("#moods")
 
-        if (noteMood.value !== "0"){
+
+        if (todaysMood.value !== "0"){
             const newEntry = {
                 date: journalDate.value,
                 concept: concepts.value,
                 entry: entryContent.value,
-                mood: noteMood.value,
+                mood: todaysMood.value,
             }
             saveEntry(newEntry)
         }else{
@@ -42,17 +44,17 @@ export const JournalFormComponent = () => {
             <!-- <br> -->
         <fieldset>
             <label for="entry">Journal entry:</label>
-            <textarea name="entry" rows="2" cols="20"></textarea>
+            <textarea name="entry" id="entry" rows="2" cols="20"></textarea>
         </fieldset>
             <!-- <br> -->
         <fieldset>
             <select class="dropdown" id="moods">
-            <option value="0">Mood for the day:</option>  
-            <option value="happy">Happy</option>
-            <option value="accomplished">Accomplished</option>
-            <option value="ok">OK</option>
-            <option value="frustrated">Frustrated</option>
-            <option value="lost">Lost</option>
+                <option value="0">Mood for the day:</option>  
+                <option value="happy">Happy</option>
+                <option value="accomplished">Accomplished</option>
+                <option value="ok">OK</option>
+                <option value="frustrated">Frustrated</option>
+                <option value="lost">Lost</option>
             </select>
         </fieldset>
         <br>   

@@ -4,22 +4,30 @@
  *    there are items in the collection exposed by the
  *    data provider component
  */
-import { useJournalEntries } from "./JournalDataProvider.js";
-import { JournalEntryComponent } from "./JournalEntry.js";
+import { getEntries, useEntries } from "./JournalDataProvider.js";
+import { JournalEntryHTML } from "./JournalEntry.js";
+
+const eventHub = document.querySelector(".container")
 
 // DOM reference to where all entries will be rendered
-const entryLog = document.querySelector(".entryList")
+const contentTarget = document.querySelector(".entryList")
 
-export const EntryListComponent = () => {
+eventHub.addEventListener('entryStateChanged', event => {  
+    render(useEntries())
+})
+
+// this EntryList is called by the main.js to render the initial
+// list of entries
+export const EntryList = () => {
     // Use the journal entry data from the data provider component
-    const entries = useJournalEntries()
+    getEntries()
+    .then(useEntries)
+    .then(render)
+}
 
-    for (const entry of entries) {
-        /*
-            Invoke the component that returns an
-            HTML representation of a single entry
-        */
-        entryLog.innerHTML += 
-        `${JournalEntryComponent(entry)}`
-    }
+const render = (entryTacoArray) => {
+       let HTMLArray = entryTacoArray.map(singleTacoEntry => {
+           return JournalEntryHTML(singleTacoEntry);
+       })
+        contentTarget.innerHTML += HTMLArray.join("");
 }
