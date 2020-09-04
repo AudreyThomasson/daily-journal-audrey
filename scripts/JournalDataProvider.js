@@ -5,42 +5,48 @@
  *      functions that other modules can use to filter
  *      the entries for different purposes.
  */
+const eventHub = document.querySelector(".container")
 
-// This is the original data.
-const journal = [
-    {
-        id: 1,
-        date: "07/24/2025",
-        concept: "HTML & CSS",
-        entry: "We talked about HTML components and how to make grid layouts with Flexbox in CSS.",
-        moods: "Ok"
-    },
+const dispatchStateChangeEvent = () => {
+    const entryStateChangedEvent = new CustomEvent("entryStateChanged")
 
-    {
-        id: 2,
-        date: "07/25/2025",
-        concept: "GitHub",
-        entry: "We talked about HTML components and how to make grid layouts with Flexbox in CSS.",
-        moods: "Ok"
-    },
+    eventHub.dispatchEvent(entryStateChangedEvent)
 
-    {
-        id: 3,
-        date: "07/26/2025",
-        concept: "Functions",
-        entry: "We talked about HTML components and how to make grid layouts with Flexbox in CSS.",
-        moods: "Ok"
-    }
-]
 
-/*
-    You export a function that provides a version of the
-    raw data in the format that you want
-*/
+
+
+const journal = []
+
+
+export const getEntries = () => {
+    return fetch("http://localhost:8088/entries") // Fetch from the API
+    .then(response => response.json())
+    .then(
+        parsedEntries => {
+        journal = parsedEntries
+        })
+}
+
+
 export const useJournalEntries = () => {
     const sortedByDate = journal.sort(
         (currentEntry, nextEntry) =>
             Date.parse(currentEntry.date) - Date.parse(nextEntry.date)
     )
     return sortedByDate
+}
+
+
+export const saveEntry = tacoEntryObj => {
+    return fetch("http://localhost:8088/entries", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(tacoEntryObj)
+    })
+    .then(() => {
+        return getEntries()
+    })
+    .then(dispatchStateChangeEvent)
 }

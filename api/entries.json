@@ -1,0 +1,35 @@
+{
+    "entries": [
+        {
+            "id": 1,
+            "date": "08/13/2020",
+            "concept": "Github, Hello World Project",
+            "entry": "Started group project Hello World",
+            "moods": "Ok"
+        },
+
+        {
+            "id": 2,
+            "date": "08/14/2020",
+            "concept": "Github, Hello World Project Day2",
+            "entry": "working on group project Hello World, wanted to work on the page styling but group had met MVP and was happy as is.",
+            "moods": "frustrated"
+        },
+
+        {
+            "id": 3,
+            "date": "08/17/2020",
+            "concept": "more Github, Hello World Project Day3",
+            "entry": "still working on group project Hello World",
+            "moods": "ok"
+        },
+
+        {
+            "id": 4,
+            "date": "08/18/2020",
+            "concept": "Presenting Hello World Project",
+            "entry": "presented group project, it wasn't pretty but it worked",
+            "moods": "accomplished"
+        }
+    ]
+}
