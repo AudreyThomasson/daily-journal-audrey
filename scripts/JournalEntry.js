@@ -9,7 +9,7 @@ export const JournalEntryHTML = (entry) => {
         <div> Date: ${entry.date}</div>
         <div>Concept: ${entry.concept}</div>
         <div>Entry: ${entry.entry}</div>
-        <div>Mood:  ${entry.moods}</div> 
+        <div>Mood:  ${entry.mood}</div> 
         <br>
     </section>
 

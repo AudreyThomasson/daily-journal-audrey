@@ -50,11 +50,11 @@ export const JournalFormComponent = () => {
         <fieldset>
             <select class="dropdown" id="moods">
                 <option value="0">Mood for the day:</option>  
-                <option value="happy">Happy</option>
-                <option value="accomplished">Accomplished</option>
-                <option value="ok">OK</option>
-                <option value="frustrated">Frustrated</option>
-                <option value="lost">Lost</option>
+                <option id="mood" value="happy">Happy</option>
+                <option id="mood" value="accomplished">Accomplished</option>
+                <option id="mood" value="ok">OK</option>
+                <option id="mood" value="frustrated">Frustrated</option>
+                <option id="mood" value="lost">Lost</option>
             </select>
         </fieldset>
         <br>   
