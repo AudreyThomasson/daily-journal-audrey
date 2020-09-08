@@ -13,7 +13,7 @@ const eventHub = document.querySelector(".container")
 const contentTarget = document.querySelector(".entryList")
 
 eventHub.addEventListener('entryStateChanged', event => {  
-    render(useEntries())
+    EntryList()
 })
 
 // this EntryList is called by the main.js to render the initial
@@ -29,5 +29,5 @@ const render = (entryTacoArray) => {
        let HTMLArray = entryTacoArray.map(singleTacoEntry => {
            return JournalEntryHTML(singleTacoEntry);
        })
-        contentTarget.innerHTML += HTMLArray.join("");
+        contentTarget.innerHTML = HTMLArray.join("");
 }

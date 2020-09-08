@@ -46,7 +46,7 @@ export const saveEntry = tacoEntryObj => {
         body: JSON.stringify(tacoEntryObj)
     })
     .then(() => {
-        return getEntries()
+        getEntries()
     })
     .then(dispatchStateChangeEvent)
 }

@@ -1,4 +1,5 @@
 import { saveEntry } from './JournalDataProvider.js'
+import { EntryList } from './JournalEntryList.js'
 
 const eventHub = document.querySelector(".container")
 const contentTarget = document.querySelector(".entryForm")
@@ -21,6 +22,7 @@ eventHub.addEventListener("click", clickEvent => {
                 mood: todaysMood.value,
             }
             saveEntry(newEntry)
+ 
         }else{
         window.alert("Choose a Mood");
         }
