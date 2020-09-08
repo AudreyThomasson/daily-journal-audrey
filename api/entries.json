@@ -1,0 +1,53 @@
+{
+  "entries": [
+    {
+      "id": 1,
+      "date": "2020-08-13",
+      "concept": "Github, Hello World Project",
+      "entry": "Started group project Hello World",
+      "mood": "Ok"
+    },
+    {
+      "id": 2,
+      "date": "2020-08-14",
+      "concept": "Github, Hello World Project Day2",
+      "entry": "wanted to work on the page styling but it met mvp",
+      "mood": "frustrated"
+    },
+    {
+      "id": 3,
+      "date": "2020-08-17",
+      "concept": "more Github, Hello World Project Day3",
+      "entry": "still working on group project Hello World",
+      "mood": "ok"
+    },
+    {
+      "id": 4,
+      "date": "2020-08-15",
+      "concept": "Presenting Hello World Project",
+      "entry": "presented group project, it wasn't pretty but it worked",
+      "mood": "accomplished"
+    },
+    {
+      "date": "2020-09-04",
+      "concept": "api",
+      "entry": "trying to get journal api to work",
+      "mood": "accomplished",
+      "id": 5
+    },
+    {
+      "date": "2020-09-03",
+      "concept": "writing to API",
+      "entry": "starting a json server and writing to an api",
+      "mood": "ok",
+      "id": 6
+    },
+    {
+      "date": "2020-09-02",
+      "concept": "lab time",
+      "entry": "working on the State Fair and Glassdale",
+      "mood": "ok",
+      "id": 7
+    }
+  ]
+}
