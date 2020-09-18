@@ -1,7 +1,7 @@
 import { saveEntry } from './JournalDataProvider.js'
 import { EntryList } from './JournalEntryList.js'
 
-const eventHub = document.querySelector(".container")
+const eventHub = document.querySelector(".formContainer")
 const contentTarget = document.querySelector(".entryForm")
 
 // code below listens for new note entry then tells saveEntry 
@@ -46,17 +46,17 @@ export const JournalFormComponent = () => {
             <!-- <br> -->
         <fieldset>
             <label for="entry">Journal entry:</label>
-            <textarea name="entry" id="entry" rows="2" cols="20"></textarea>
+            <textarea name="entry" id="entry" rows="6" cols="47"></textarea>
         </fieldset>
             <!-- <br> -->
         <fieldset>
             <select class="dropdown" id="moods">
-                <option value="0">Mood for the day:</option>  
-                <option id="mood" value="happy">Happy</option>
-                <option id="mood" value="accomplished">Accomplished</option>
-                <option id="mood" value="ok">OK</option>
-                <option id="mood" value="frustrated">Frustrated</option>
-                <option id="mood" value="lost">Lost</option>
+                <option value="0" class="moodHeader">Mood for the day:</option>  
+                <option id="mood" value="happy">😀 Happy</option>
+                <option id="mood" value="accomplished">🙂 Accomplished</option>
+                <option id="mood" value="ok">😐 OK</option>
+                <option id="mood" value="frustrated">😫 Frustrated</option>
+                <option id="mood" value="lost">🤯 Lost</option>
             </select>
         </fieldset>
         <br>   

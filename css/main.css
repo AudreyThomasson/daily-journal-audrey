@@ -4,10 +4,43 @@ body {
 
 .logo {
     font-family: 'Delius Swash Caps', cursive;
+    text-align: center;
+    color: #6d9c7d;
+    font-size: 3em;
+}
+
+.box {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+/* ----Entry Form CSS starts here---- */
+.formContainer {
+    width: 50%;
+    padding: 1em;
+}
+
+.entryForm {
+    margin: auto;
 }
 
 fieldset {
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: 70%;
+    color: #6d9c7d;
+
+}
+.moodHeader {
+    color: #6d9c7d;
+}
+
+#saveEntry {
+    color: white;
+    background: #6d9c7d;
+}
+/* ----Entry Form CSS ends here---- */
+
+.entriesContainer {
+    width: 50%;
 }
