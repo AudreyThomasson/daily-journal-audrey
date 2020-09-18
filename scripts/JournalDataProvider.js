@@ -19,11 +19,12 @@ let journal = []
 
 
 export const getEntries = () => {
-    return fetch("http://localhost:8088/entries") // Fetch from the API
+    return fetch("http://localhost:8088/entries?_expand=moods") // Fetch from the API
     .then(response => response.json())
     .then(
         parsedEntries => {
         journal = parsedEntries
+        console.log(journal)
         })
 }
 
