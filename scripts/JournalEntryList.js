@@ -7,7 +7,7 @@
 import { getEntries, useEntries } from "./JournalDataProvider.js";
 import { JournalEntryHTML } from "./JournalEntry.js";
 
-const eventHub = document.querySelector(".container")
+const eventHub = document.querySelector(".formContainer")
 
 // DOM reference to where all entries will be rendered
 const contentTarget = document.querySelector(".entryList")

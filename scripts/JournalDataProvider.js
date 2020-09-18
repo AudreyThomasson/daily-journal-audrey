@@ -5,7 +5,7 @@
  *      functions that other modules can use to filter
  *      the entries for different purposes.
  */
-const eventHub = document.querySelector(".container")
+const eventHub = document.querySelector(".formContainer")
 
 const dispatchStateChangeEvent = () => {
     const entryStateChangedEvent = new CustomEvent("entryStateChanged")
