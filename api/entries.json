@@ -1,5 +1,5 @@
 {
- "entries": [
+  "entries": [
     {
       "id": 1,
       "date": "2020-08-13",
@@ -48,30 +48,39 @@
       "entry": "working on the State Fair and Glassdale",
       "moodId": 3,
       "id": 7
+    },
+    {
+      "date": "2020-09-21",
+      "concept": "Json server ",
+      "entry": "Using lego database to set up a json server, embed vs expand",
+      "moodId": 3,
+      "id": 8
     }
   ],
-
   "moods": [
     {
       "id": 1,
       "label": "Happy"
     },
     {
-      "id": 1,
+      "id": 2,
       "label": "Accomplished"
     },
     {
-      "id": 1,
+      "id": 3,
       "label": "OK"
     },
     {
-      "id": 1,
+      "id": 4,
       "label": "Frustrated"
     },
     {
-      "id": 1,
+      "id": 5,
       "label": "Lost"
+    },
+    {
+      "id": 6,
+      "label": "Tired"
     }
   ]
-
 }
