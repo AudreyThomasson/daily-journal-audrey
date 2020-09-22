@@ -4,7 +4,8 @@ const contentTarget = document.querySelector(".entryList")
 
 contentTarget.addEventListener("click", clickEvent => {
     if (clickEvent.target.id === "deleteEntry") {
-        removeThisEntry = clickEvent.target.value
+        const removeThisEntry = clickEvent.target.value
+        console.log(removeThisEntry)
         deleteEntry(removeThisEntry)
     }
 })
@@ -20,7 +21,7 @@ export const JournalEntryHTML = (entry) => {
         <div>Concept: ${entry.concept}</div>
         <div>Entry: ${entry.entry}</div>
         <div>Mood:  ${entry.mood.label}</div>
-        <button type="button" id="deleteEntry" value=${entry.id}>Delete</button> 
+        <button type="button" id="deleteEntry" value="${entry.id}">Delete</button> 
         <br>
     </section>
 

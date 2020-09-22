@@ -29,13 +29,6 @@
       "moodId": 2
     },
     {
-      "date": "2020-09-04",
-      "concept": "api",
-      "entry": "trying to get journal api to work",
-      "moodId": 2,
-      "id": 5
-    },
-    {
       "date": "2020-09-03",
       "concept": "writing to API",
       "entry": "starting a json server and writing to an api",
@@ -48,13 +41,6 @@
       "entry": "working on the State Fair and Glassdale",
       "moodId": 3,
       "id": 7
-    },
-    {
-      "date": "2020-09-21",
-      "concept": "Json server ",
-      "entry": "Using lego database to set up a json server, embed vs expand",
-      "moodId": 3,
-      "id": 8
     }
   ],
   "moods": [
