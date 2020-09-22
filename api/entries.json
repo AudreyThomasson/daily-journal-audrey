@@ -5,49 +5,68 @@
       "date": "2020-08-13",
       "concept": "Github, Hello World Project",
       "entry": "Started group project Hello World",
-      "mood": "Ok"
+      "moodId": 3
     },
     {
       "id": 2,
       "date": "2020-08-14",
       "concept": "Github, Hello World Project Day2",
       "entry": "wanted to work on the page styling but it met mvp",
-      "mood": "frustrated"
+      "moodId": 4
     },
     {
       "id": 3,
       "date": "2020-08-17",
       "concept": "more Github, Hello World Project Day3",
       "entry": "still working on group project Hello World",
-      "mood": "ok"
+      "moodId": 3
     },
     {
       "id": 4,
       "date": "2020-08-15",
       "concept": "Presenting Hello World Project",
       "entry": "presented group project, it wasn't pretty but it worked",
-      "mood": "accomplished"
-    },
-    {
-      "date": "2020-09-04",
-      "concept": "api",
-      "entry": "trying to get journal api to work",
-      "mood": "accomplished",
-      "id": 5
+      "moodId": 2
     },
     {
       "date": "2020-09-03",
       "concept": "writing to API",
       "entry": "starting a json server and writing to an api",
-      "mood": "ok",
+      "moodId": 3,
       "id": 6
     },
     {
       "date": "2020-09-02",
       "concept": "lab time",
       "entry": "working on the State Fair and Glassdale",
-      "mood": "ok",
+      "moodId": 3,
       "id": 7
+    }
+  ],
+  "moods": [
+    {
+      "id": 1,
+      "label": "Happy"
+    },
+    {
+      "id": 2,
+      "label": "Accomplished"
+    },
+    {
+      "id": 3,
+      "label": "OK"
+    },
+    {
+      "id": 4,
+      "label": "Frustrated"
+    },
+    {
+      "id": 5,
+      "label": "Lost"
+    },
+    {
+      "id": 6,
+      "label": "Tired"
     }
   ]
 }
